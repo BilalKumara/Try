@@ -66,7 +66,7 @@
 
     let scale = 1;
 
-    noBtn.addEventListener("mouseover", () => {
+    noBtn.addEventListener("click", () => {
       const maxX = container.clientWidth - noBtn.clientWidth;
       const maxY = container.clientHeight - noBtn.clientHeight;
 
@@ -81,20 +81,6 @@
       yesBtn.style.transform = `scale(${scale})`;
     });
 
-    noBtn.addEventListener("click", () => {
-  // Pindah posisi juga biar tetap "ngeselin"
-  const maxX = container.clientWidth - noBtn.clientWidth;
-  const maxY = container.clientHeight - noBtn.clientHeight;
-
-  const randomX = Math.random() * maxX;
-  const randomY = Math.random() * maxY;
-
-  noBtn.style.left = randomX + "px";
-  noBtn.style.top = randomY + "px";
-
-  // Membesarkan tombol NO
-  scale += 0.3;
-  noBtn.style.transform = `scale(${scale})`;
 });
 
     yesBtn.addEventListener("click", () => {
