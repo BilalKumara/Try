@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pertanyaan</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -51,6 +52,7 @@
     }
   </style>
 </head>
+
 <body>
   <h1>Mau jadi pacarku? 😄</h1>
 
@@ -76,12 +78,10 @@
       noBtn.style.left = randomX + "px";
       noBtn.style.top = randomY + "px";
 
-      // Membesarkan tombol YES
+      // ✅ Sekarang yang membesar adalah tombol NO
       scale += 0.3;
       yesBtn.style.transform = `scale(${scale})`;
     });
-
-});
 
     yesBtn.addEventListener("click", () => {
       window.location.href = "success.html";
